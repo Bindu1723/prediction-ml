@@ -1,0 +1,210 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/home.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>House Price Prediction</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1>Rental House Price Prediction in Geo Areas using ML</h1>
+      </header>
+
+      <form class="add text-center my-4" method="post" action="/submit">
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="text-light my-2"> BHK </label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="bhk"
+              name="bhk"
+            />
+          </div>
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Size </label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="size"
+              name="size"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Area Type </label>
+            <select
+              class="form-select"
+              aria-label="Select Area Type"
+              name="areaType"
+              id="areaType"
+            >
+              <option selected value="0">Built Area</option>
+              <option value="1">Carpet Area</option>
+              <option value="2">Super Area</option>
+            </select>
+          </div>
+
+          <div class="col-lg-6">
+            <label class="text-light my-2"> City </label>
+            <select
+              class="form-select"
+              aria-label="Select Area Type"
+              name="city"
+              id="city"
+            >
+              <option selected value="0">Bangalore</option>
+              <option value="1">Chennai</option>
+              <option value="2">Delhi</option>
+              <option value="3">Hyderabad</option>
+              <option value="4">Kolkata</option>
+              <option value="5">Mumbai</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Furnishing Status </label>
+            <select
+              class="form-select"
+              aria-label="Select Area Type"
+              name="furnishingStatus"
+              id="furnishingStatus"
+            >
+              <option selected value="0">Furnished</option>
+              <option value="1">Semi-Furnished</option>
+              <option value="2">Unfurnished</option>
+            </select>
+          </div>
+
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Tenants Preffered </label>
+            <select
+              class="form-select"
+              aria-label="Select Area Type"
+              name="tenantsPreferred"
+              id="tenantsPreferred"
+            >
+              <option selected value="0">Bachelors</option>
+              <option value="1">Bachelors/Family</option>
+              <option value="2">Family</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Bathroom </label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="bathroom"
+              name="bathroom"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Point of Contact </label>
+            <select
+              class="form-select"
+              aria-label="Select Area Type"
+              name="pointOfContact"
+              id="pointOfContact"
+            >
+              <option selected value="0">Contact Agent</option>
+              <option value="1">Contact Owner</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Floor Level </label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="floorLevel"
+              name="floorLevel"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Total Floors </label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="totalFloors"
+              name="totalFloors"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Month</label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="month"
+              name="month"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Day</label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="day"
+              name="day"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Day of the Week</label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="week"
+              name="week"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <label class="text-light my-2"> Quarter</label>
+            <input
+              class="form-control m-auto"
+              type="text"
+              id="quarter"
+              name="quarter"
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-light my-4" id="sb">
+          Predict Price
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
