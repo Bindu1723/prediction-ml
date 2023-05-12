@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 from scipy.special import inv_boxcox
 from os.path import join, dirname
 
-filename = join(dirname(__file__), "model", "finalized_model.sav")
+filename = join(dirname(__file__), "model", "final_model.pkl")
 app = Flask(__name__)
 lambda_ = -0.34318951188220137
 
