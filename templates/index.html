@@ -27,7 +27,7 @@
 
       <form class="add text-center my-4" method="post" action="/submit">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <label class="text-light my-2"> BHK </label>
             <input
               class="form-control m-auto"
@@ -36,7 +36,9 @@
               name="bhk"
             />
           </div>
-          <div class="col-lg-6">
+          </div>
+          <div class="row">
+          <div class="col-lg-12">
             <label class="text-light my-2"> Size </label>
             <input
               class="form-control m-auto"
@@ -48,155 +50,55 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Area Type </label>
-            <select
-              class="form-select"
-              aria-label="Select Area Type"
-              name="areaType"
-              id="areaType"
-            >
-              <option selected value="0">Built Area</option>
-              <option value="1">Carpet Area</option>
-              <option value="2">Super Area</option>
-            </select>
-          </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <label class="text-light my-2"> City </label>
+            <center> 
             <select
               class="form-select"
               aria-label="Select Area Type"
               name="city"
               id="city"
+              style="width: 250px; text-align: center; "
             >
-              <option selected value="0">Bangalore</option>
-              <option value="1">Chennai</option>
-              <option value="2">Delhi</option>
-              <option value="3">Hyderabad</option>
-              <option value="4">Kolkata</option>
-              <option value="5">Mumbai</option>
+              <option value=5>Mumbai</option>
+          <option value=4>Bangalore</option>
+          <option value=3>Hyderabad</option>
+          <option value=2>Delhi</option>
+          <option value=1>Chennai</option>
+          <option value=0>Kolkata</option>
             </select>
+            </center>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <label class="text-light my-2"> Furnishing Status </label>
+            <center> 
             <select
               class="form-select"
               aria-label="Select Area Type"
               name="furnishingStatus"
               id="furnishingStatus"
+              style="width: 250px; text-align: center; "
             >
-              <option selected value="0">Furnished</option>
-              <option value="1">Semi-Furnished</option>
-              <option value="2">Unfurnished</option>
+              <option value=2>Furnished</option>
+          <option value=1>Semi-Furnished</option>
+          <option value=0>Unfurnished</option>
             </select>
-          </div>
-
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Tenants Preffered </label>
-            <select
-              class="form-select"
-              aria-label="Select Area Type"
-              name="tenantsPreferred"
-              id="tenantsPreferred"
-            >
-              <option selected value="0">Bachelors</option>
-              <option value="1">Bachelors/Family</option>
-              <option value="2">Family</option>
-            </select>
+             </center>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <label class="text-light my-2"> Bathroom </label>
             <input
               class="form-control m-auto"
               type="text"
               id="bathroom"
               name="bathroom"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Point of Contact </label>
-            <select
-              class="form-select"
-              aria-label="Select Area Type"
-              name="pointOfContact"
-              id="pointOfContact"
-            >
-              <option selected value="0">Contact Agent</option>
-              <option value="1">Contact Owner</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Floor Level </label>
-            <input
-              class="form-control m-auto"
-              type="text"
-              id="floorLevel"
-              name="floorLevel"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Total Floors </label>
-            <input
-              class="form-control m-auto"
-              type="text"
-              id="totalFloors"
-              name="totalFloors"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Month</label>
-            <input
-              class="form-control m-auto"
-              type="text"
-              id="month"
-              name="month"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Day</label>
-            <input
-              class="form-control m-auto"
-              type="text"
-              id="day"
-              name="day"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Day of the Week</label>
-            <input
-              class="form-control m-auto"
-              type="text"
-              id="week"
-              name="week"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <label class="text-light my-2"> Quarter</label>
-            <input
-              class="form-control m-auto"
-              type="text"
-              id="quarter"
-              name="quarter"
             />
           </div>
         </div>

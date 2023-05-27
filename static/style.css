@@ -18,6 +18,10 @@ input[type='text']:focus {
   cursor: pointer;
 }
 
+select {
+  width: 100px;
+}
+
 ul {
   color: white;
 }
